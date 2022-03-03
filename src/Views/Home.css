@@ -1,0 +1,19 @@
+.wave {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(161% + 1.3px);
+    height: 167px;
+}
+
+.wave .shape-fill {
+    fill: #B69B7D;
+}

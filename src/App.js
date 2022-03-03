@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Views/Home';
+import Nav from './Views/Nav';
+import Profile from './Views/Profile';
+import User from './Views/User';
+import { Router } from '@gatsbyjs/reach-router';
+import About from './Views/About';
+import Facts from './Views/Facts';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav />
+      <Router>
+        <About path="/about" />
+        <Facts path="/facts" />
+        <Home path="/" />
+        <User path="user" />
+        <Profile path="/profile" />
+      </Router>
     </div>
   );
 }
