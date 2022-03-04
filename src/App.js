@@ -16,8 +16,8 @@ function App() {
         <About path="/about" />
         <Facts path="/facts" />
         <Home path="/" />
+        <Profile path='/:drinkID' />
         <User path="user" />
-        <Profile path="/profile" />
       </Router>
     </div>
   );

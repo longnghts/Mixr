@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './Nav.css';
 import { Router, Link } from '@gatsbyjs/reach-router';
 import AppBar from '@mui/material/AppBar';
@@ -9,11 +10,14 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button'
 import { CssBaseline } from '@mui/material';
-
+import SearchIcon from '@mui/icons-material/Search';
+import { styled, alpha } from '@mui/material/styles';
+import InputBase from '@mui/material/InputBase';
 
 
 
 const Nav = () => {
+
     return (
         <>
             <CssBaseline />
