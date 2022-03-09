@@ -27,7 +27,7 @@ const OneDrink = (props) => {
                     console.log(res.data.drinks);
                 })
                 .catch(err => console.error(err));
-        }, 500)
+        }, 1500)
     }, [])
 
     console.log(drinkData);
