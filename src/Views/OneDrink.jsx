@@ -14,7 +14,7 @@ import Chip from '@mui/material/Chip';
 
 
 
-const Profile = (props) => {
+const OneDrink = (props) => {
 
     const [drinkData, setDrinkData] = useState(null);
 
@@ -149,7 +149,7 @@ const Profile = (props) => {
                                 }} sx={{ mr: 0 }}>
                                     {drinkData[0].strDrink}
                                 </Typography>
-                                <Typography variant="body" align="start" paddingLeft='50px' paddingRight='50px' style={{}}>
+                                <Typography variant="body" align="start" paddingLeft='50px' paddingRight='50px' style={{ fontFamily: 'Montserrat' }}>
                                     {drinkData[0].strInstructions}
                                 </Typography>
 
@@ -167,4 +167,4 @@ const Profile = (props) => {
         </>
     )
 }
-export default Profile
+export default OneDrink

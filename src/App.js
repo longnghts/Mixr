@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './Views/Home';
 import Nav from './Views/Nav';
-import Profile from './Views/Profile';
+import OneDrink from './Views/OneDrink';
 import User from './Views/User';
 import { Router } from '@gatsbyjs/reach-router';
 import About from './Views/About';

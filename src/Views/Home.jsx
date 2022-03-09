@@ -39,7 +39,7 @@ const Home = (props) => {
                 <Typography variant="h6" style={{ fontFamily: 'Montserrat', fontWeight: 400, color: 'white' }} sx={{ m: 0 }}>The one place for all of your mixed drink needs.</Typography>
 
                 <form onSubmit={formSubmitHandler} style={{ marginTop: '2rem', marginLeft: "2rem", marginRight: "2rem", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <TextField style={{ marginBottom: "3rem", fontColor: 'white' }} variant='outlined' label='Search Ingredient' name="ingredient" onChange={ingOnChangeHandler} />
+                    <TextField sx={{ marginBottom: "3rem" }} variant='outlined' label='Search Ingredient' name="ingredient" onChange={ingOnChangeHandler} />
                     &nbsp;
                     &nbsp;
                     <Button size='large' type='submit' variant='contained' style={{ height: '3.4rem', marginBottom: "3rem", color: '#e2e0d5', backgroundColor: '#222c3c', fontFamily: 'DM Serif Display', fontWeight: 1000 }}>GO</Button>
