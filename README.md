@@ -3,7 +3,7 @@
 Mixr is a React web app for mixology. Simply search an ingredient and presto! you will see all of the drinks with that ingredient.
 ## Installation
 
-Use npm i to install the required packages and the node_modules folder.
+Use npm i in the project root to install the required packages and the node_modules folder.
 
 ```bash
 npm i
