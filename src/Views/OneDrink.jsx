@@ -24,13 +24,11 @@ const OneDrink = (props) => {
             axios.get(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${props.drinkID}`)
                 .then(res => {
                     setDrinkData(res.data.drinks);
-                    console.log(res.data.drinks);
                 })
                 .catch(err => console.error(err));
         }, 1500)
     }, [])
 
-    console.log(drinkData);
 
     return (
         <>

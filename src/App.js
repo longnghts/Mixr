@@ -1,11 +1,12 @@
 import './App.css';
 import Home from './Views/Home';
-import Nav from './Views/Nav';
+import Nav from './components/Nav';
 import OneDrink from './Views/OneDrink';
 import User from './Views/User';
 import { Router } from '@gatsbyjs/reach-router';
 import About from './Views/About';
 import Facts from './Views/Facts';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -16,9 +17,10 @@ function App() {
         <About path="/about" />
         <Facts path="/facts" />
         <Home path="/" />
-        <Profile path='/:drinkID' />
+        <OneDrink path='/:drinkID' />
         <User path="user" />
       </Router>
+      <Footer/>
     </div>
   );
 }

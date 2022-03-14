@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import { grey } from '@mui/material/colors';
+import Card from '@mui/material/Card';
+import { CardContent, CardMedia } from '@mui/material';
 import './Home.css'
 
 
@@ -53,13 +55,28 @@ const Home = (props) => {
             <div style={{ display: "flex", flexWrap: 'wrap', justifyContent: 'space-between' }}>
                 {
                     drinks ?
+
+                    //maping over drinks to pull each individual drink item
                         drinks.drinks.map((drinks, index) => {
 
                             return <DrinkCards drinks={drinks} key={index} i={index} formSubmitHandler={formSubmitHandler} />
                         })
 
                         :
-                        ""
+                        //showing placeholder card on home page of the website
+                        <div style={{display: 'flex', justifyContent: 'center', marginBottom: '60px'}}>
+                        <Card style={{height: '100%', width: '50%',}}>
+                        <CardMedia>
+                        <img src="https://images.pexels.com/photos/1267323/pexels-photo-1267323.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" style={{width: '100%'}} />
+                        </CardMedia>
+                        <CardContent>
+                        <h2 style={{fontFamily: 'Montserrat'}}>Looking to get into Mixology?</h2>
+                        <p>Sign up for one of our expert led classes! They're 100% remote and a great experience for individuals and groups!</p>
+
+                        </CardContent>
+
+                        </Card>
+                        </div>
                 }
             </div>
 
